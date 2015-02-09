@@ -535,7 +535,7 @@ Swift Compatibility
 
 FXForms is fully compatible with Swift, with the following caveats:
 
-* Your forms objects must inherit from `NSObject`, or de declared using the `@objc` qualifier.
+* Your forms objects must inherit from `NSObject`, or be declared using the `@objc` qualifier.
 * For collection fields, you must use `NSArray`, `NSDictionary`, `NSOrderedSet`, etc. Swift's strongly typed collections won't work.
 * If your form objects are declared in a different module to your main app, FXForm's field value class inference may not work correctly, in which case you can explicitly specify the field class by adding the following method to your form object for each field that doesn't work:
 
